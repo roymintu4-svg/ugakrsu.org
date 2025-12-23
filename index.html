@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGAKRSU | Undivided Goalpara Koch Rajbongshi Students' Union</title>
+    <style>
+        /* Color Palette & Base Styles */
+        :root {
+            --primary-red: #b91c1c;
+            --gold: #facc15;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text-gray: #475569;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--dark);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover { color: var(--gold); }
+
+        /* Header / Hero */
+        header {
+            background: var(--primary-red);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 6px solid var(--gold);
+        }
+
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; }
+        .tagline { font-style: italic; color: var(--gold); margin-top: 10px; font-size: 1.2rem; }
+
+        /* Section Styling */
+        section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        h2 { color: var(--primary-red); text-align: center; font-size: 2rem; margin-bottom: 30px; }
+
+        /* News Cards */
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid var(--primary-red); }
+
+        /* Leadership Circle */
+        .leader-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; }
+        .leader-card { text-align: center; width: 250px; }
+        .photo-placeholder { width: 120px; height: 120px; background: #cbd5e1; border-radius: 50%; margin: 0 auto 15px; }
+
+        /* Contact Form */
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        input, textarea, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { background: var(--primary-red); color: white; padding: 15px; border: none; border-radius: 5px; width: 100%; font-weight: bold; cursor: pointer; }
+
+        footer { background: #111; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+    <h1>UGAKRSU</h1>
+    <div class="tagline">Undivided Goalpara Koch Rajbongshi Students' Union</div>
+    <p>Unity • Identity • Progress</p>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="line-height: 1.8; text-align: center;">
+        Ugakrsu represents the collective voice of the Koch Rajbongshi students from the historic <strong>Undivided Goalpara</strong> region. 
+        We trace our lineage back to the glorious Kamata-Koch Kingdom, upholding the spirit of <strong>Bir Chilarai</strong> 
+        in our pursuit of social justice, constitutional ST status, and educational excellence.
+    </p>
+</section>
+
+<section id="news" style="background: #f1f5f9; max-width: 100%;">
+    <div style="max-width: 1100px; margin: auto;
